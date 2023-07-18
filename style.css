@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: antiquewhite;
+}
+h1 {
+   text-align: center;
+}
+
+.input1, .options, .input2, .btn, .result {
+    text-align: center;
+}
+
+input {
+    background-color: rgb(198, 255, 255);
+    height: 30px;
+    border-radius: 8px;
+
+}
+
+.btn button {
+    background-color: brown;
+    color: white;
+    font-size: large;
+    border-radius: 8px;
+}

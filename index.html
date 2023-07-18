@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1>Simple Calculator</h1>
+	<br>
+	
+	<div class="input1">
+
+		<!-- <div class="mybtn"> -->
+
+	<h3> Value 1</h3>	<input type="number" name="first" id="first" step="any">
+	</div>
+	<br>
+
+
+	<div class="options">
+		<select id="ope">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">X</option>
+			<option value="/">/</option>
+		</select>
+	</div>
+	<br>
+
+	<div class="input2">
+		<h3>value 2</h3><input type="number" name="second" id="second" step="any">
+	</div>
+	<br>
+
+
+	<div class="btn">
+		<button onclick="cal()">Calculate</button>
+	</div>
+	<!-- </div> -->
+	<br>
+
+	<div class="result">
+		<h3>Result</h3>
+		<input type="text" name="" id="res" readonly="">
+	</div>
+
+</body>
+<script type="text/javascript">
+	function cal() {
+		var opr1 = document.getElementById('first').value;
+		var opr2 = document.getElementById('second').value;
+		var ope = document.getElementById('ope').value;
+
+		if (ope == '+') {
+			var res = parseInt(opr1) + parseInt(opr2);
+		}
+		if (ope == '-') {
+			var res = parseInt(opr1) - parseInt(opr2);
+		}
+		if (ope == '*') {
+			var res = parseInt(opr1) * parseInt(opr2);
+		}
+		if (ope == '/') {
+			var res = parseInt(opr1) / parseInt(opr2);
+		}
+		document.getElementById('res').value = res;
+
+	}
+</script>
+
+</html>
